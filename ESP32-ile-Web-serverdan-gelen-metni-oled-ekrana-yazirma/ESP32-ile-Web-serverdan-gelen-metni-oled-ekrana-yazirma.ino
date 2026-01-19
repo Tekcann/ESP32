@@ -2,7 +2,7 @@
 #include <Adafruit_GFX.h>
 #include <Wire.h>
 #include <time.h>
-#include <Preferences.h>
+
 #include <WebServer.h>
 #include <WiFi.h>
 
@@ -23,7 +23,7 @@ Adafruit_SSD1306 display(ekran_uzunluk, ekran_yukseklik, &Wire, ekran_adres);
 #pragma region web ayrları başlangıç
 
 WebServer server(80);
-Preferences tercihler;
+
 
 /*AP bilgileri*/ //telefonun esp32 ye bağlanması gerekir
 const char* AP_SSID = "ESP32-AYAR 192.168.4.1";

@@ -3,8 +3,8 @@
 
 
 // WiFi bilgileri
-const char* ssid = "Gorkem";
-const char* password = "grkm1234";
+const char* ssid = "TurkTelekom_ZTYKS3_2.4GHz";
+const char* password = "x3XuYXczxtYu";
 
 // NTP ayarları
 const char* ntpServer = "pool.ntp.org";
