@@ -2,8 +2,8 @@
 #include <Wire.h>
 #include <Adafruit_SSD1306.h>
 
-#define analog_pin 2
-#define buton_pin 5
+#define analog_pin 32
+#define buton_pin 13
 
 #define ekran_uzunluk 128
 #define ekran_yukseklik 32
@@ -12,7 +12,7 @@
 #define ekran_adres 0x3C
 
 const char* hangi_secenek = "Boşta";
-const char* sayfa_ismi = "Birinci";
+const char* sayfa_ismi = "AnaSayfa";
 
 Adafruit_SSD1306 oled(ekran_uzunluk, ekran_yukseklik, &Wire, reset_pin);
 
@@ -86,7 +86,7 @@ void ButonaBasmaKosullari(){
       sayfa_ismi = "Elmalar";
     }
     else if(hangi_secenek == "Dördüncü"){
-      sayfa_ismi = "Birinci";
+      sayfa_ismi = "AnaSayfa";
     }
     
     }
@@ -95,7 +95,7 @@ void ButonaBasmaKosullari(){
 //her 8 pixelde bir alt kısma geçsin yani 0-8-16-24 dört sıra olacak
 //bunu nasıl yaparım
 void Secenekler(){
-  if(sayfa_ismi == "Birinci"){
+  if(sayfa_ismi == "AnaSayfa"){
   oled.setCursor(15, 0);
   oled.print("1deneme1");
 
